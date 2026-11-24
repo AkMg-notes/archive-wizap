@@ -1,0 +1,517 @@
+@charset "EUC-JP";
+/*
+Default style (before each style is defined)
+*/
+
+*	{
+	margin:0;
+	padding:0;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none;
+	border-style:none;
+	}
+
+body	{
+	color:#330000;
+	background-color:#cccccc;
+	text-align:left;
+	quotes:"「" "」";
+	line-height:1.5em;
+/* font-size is not defined. */
+        padding:0.2em 0 0.2em 0
+	}
+
+/*
+For block-level element
+*/
+
+p	{
+	background-color:transparent;
+	margin:1em 1.2em;
+	padding:0;
+	}
+
+p.counter	{
+	text-align:right;
+	}
+
+p.updated	{
+	text-align:right;
+	}
+
+h1	{
+	color:#000000;
+	background-color:#cc9999;
+	font-size:200%;
+	margin:0.75em 0.2em;
+	padding:0.8em;
+	border-style:none;
+	text-align:center;
+	}
+
+h1#zonetitle	{
+	color:#000000;
+	background-color:#cc9966;
+	font-size:225%;
+	border:6px inset #333333;
+	}
+
+h2	{
+	color:#000000;
+	background-color:transparent;
+	font-size:175%;
+	margin:1.5em 0 0.75em;
+	padding:4px 1.5em;
+	border-style:groove none;
+	border-width:4px;
+	border-color:#000000;
+	}
+
+h3	{
+	color:#000000;
+	background-color:transparent;
+	font-size:125%;
+	margin:1.2em 0.8em 0.4em;
+	padding:0.2em 0.2em 2px 0.2em;
+	border-style:none none solid none;
+	border-width:1px;
+	border-color:#000000;
+	}
+
+dl,ul,ol	{
+	color:#330000;
+	background-color:#cccc99;
+	margin:1em 2.2em;
+	padding:0.8em;
+	list-style-position:inside;
+	border:1px ridge #000000;
+	}
+
+ul	{
+	list-style-type:disc;
+	}
+
+ol	{
+	list-style-type:decimal;
+	}
+
+dl	{
+	list-style-type:none;
+	}
+
+dt	{
+	margin:0.2em;
+	padding:0;
+	color:#000033;
+	background-color:transparent;
+	}
+
+dt:before	{
+	content:"-"
+	}
+
+dt:after	{
+	content:"-";
+	}
+
+dd,li	{
+	margin:0.4em 0.2em;
+	line-height:1.3em;
+	}
+
+dd	{
+	padding:0 0 0 0.8em;
+	}
+
+address	{
+	margin:0.5em 0.2em;
+	text-align:right;
+	}
+
+blockquote	{
+	margin:0.5em 1.5em;
+	padding:0.2em;
+	color:#993366;
+	background-color:transparent;
+	}
+
+blockquote:before	{
+	content:no-open-quote;
+	}
+
+blockquote:after	{
+	content:no-close-quote;
+	}
+
+hr	{
+	border-style:none;
+	visibility:hidden;
+	}
+
+hr.partline	{
+	border-style:none;
+	display:none;
+	}
+
+pre	{
+	margin:0.5em;
+	padding:0.2em;
+	border:1px solid #000000;
+	line-height:100%;
+	}
+
+div	{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	border-style:none;
+	background-color:transparent;
+	}
+
+div.section	{
+	margin:1em 0;
+	}
+
+div#FirstDate	{
+	float:right;
+	width:25%;
+	}
+
+div#ForGoing	{
+	width:75%;
+	}
+
+/*
+For elements in a particular element
+*/
+
+li ul	{
+	margin:0.8em 0.5em;
+	padding:0;
+	border-style:none;
+	}
+
+li ol	{
+	margin:0.8em 0.5em;
+	padding:0;
+	border-style:none;
+	}
+
+dd ul	{
+	margin:0.8em 0.5em;
+	padding:0;
+	border-style:none;
+	}
+
+dd ol	{
+	margin:0.8em 0.5em;
+	padding:0;
+	border-style:none;
+	}
+
+ul ul	{
+	list-style-type:circle;
+	}
+
+ol ol	{
+	list-style-type:lower-roman;
+	}
+
+blockquote p	{
+	margin:1.2em;
+	}
+
+/*
+For inline element
+*/
+
+em	{
+	text-decoration:underline;
+	}
+
+strong	{
+	color:#ff0000;
+	background-color:transparent;
+	text-decoration:underline;
+	}
+
+q	{
+	color:#993366;
+	background-color:transparent;
+	}
+
+q:before	{
+	content:open-quote;
+	}
+
+q:after	{
+	content:close-quote;
+	}
+
+abbr	{
+	color:#330066;
+	background-color:transparent;
+	border-style:none none dashed none;
+	border-bottom-color:#006600;
+	border-bottom-width:1px;
+	}
+
+dfn	{
+	}
+
+dfn:before	{
+	content:"「";
+	}
+
+dfn:after	{
+	content:"」";
+	}
+
+ins	{
+	}
+
+del	{
+	text-decoration:line-through;
+	}
+
+a	{
+	text-decoration:underline;
+	}
+
+a.DsAnchor	{
+/* a[name] */
+	text-decoration:none;
+	}
+
+a[name]	{
+	text-decoration:none;
+	}
+
+a:link	{
+        color:#3333cc;
+	background-color:transparent;
+        }
+
+a:visited	{
+	color:#669999;
+	background-color:transparent;
+	}
+
+a:active	{
+	}
+
+a:hover	{
+	color:#663333;
+	background-color:transparent;
+	}
+
+a.DsAnchor:hover	{
+	color:#000000;
+	background-color:transparent;
+	}
+
+a[name]:hover	{
+	color:#000000;
+	background-color:transparent;
+	}
+
+a:focus	{
+	color:#333333;
+	background-color:transparent;
+	}
+	
+/*
+For general class definition
+*/
+
+.caution	{
+	color:#ff0000;
+	background-color:transparent;
+	}
+
+.backlink	{
+	margin:2em 2.2em 1.5em 2.2em;
+	text-align:right;
+	}
+
+.dissonance	{
+	color:#ff0000;
+	background-color:transparent;
+	}
+
+.subtitle	{
+	text-align:center;
+	}
+
+.facehalf	{
+	clear:left;
+	float:left;
+	width:50%;
+	}
+
+.reversehalf	{
+	float:left;
+	width:50%;
+	}
+
+.combined	{
+	clear:both;
+	}
+
+/*
+For general ID definition
+*/
+
+#StartMain	{
+	clear:right;
+	}
+
+/*
+For tables
+*/
+
+table	{
+	margin:2em;
+	text-align:center;
+	border:2px solid #000000;
+	}
+
+th,td	{
+	border:1px solid #000000;
+	padding:0.2em;
+	} 
+
+th	{
+	color:#330066;
+	background-color:#ccccff;
+	}
+
+td	{
+	}
+
+th.personname	{
+	width:6em;
+	}
+
+
+tbody.sec1	{
+	color:#666666;
+	background-color:#ffffff;
+	}
+
+tbody.sec2	{
+	color:#333333;
+	background-color:#cccccc;
+	}	
+
+tbody.sec3	{
+	color:#000000;
+	background-color:#999999;
+	}
+
+/* for elements for CGIprogram including picobbs-class */
+input	{
+	margin:0.2em;
+	padding:0;
+	}
+
+input.text	{
+	color:#000000;
+	background-color:#ffffff;
+	border:2px inset #999999;
+	}
+
+input.transmit	{
+	font-size:75%;
+	color:#333333;
+	background-color:#cccccc;
+	border:2px outset #999999;
+	line-height:1.2em;
+	padding:0 0 2px 0;
+	}
+
+textarea	{
+	color:#000000;
+	background-color:#ffffff;
+	border:2px inset #999999;	
+	}
+
+form	{
+	background-color:transparent;
+	margin:0;
+	padding:0;
+	}
+
+fieldset	{
+	margin:1.2em;
+	padding:0;
+	}
+
+legend	{
+	}
+
+table.inputform	{
+	text-align:left;
+	margin:1em 1.2em;
+	}
+
+.inputform th	{
+	text-align:center;
+	}
+
+.Label
+	{
+	font-weight:bold;
+	}
+
+.Greeting
+	{
+	text-align:center;
+	}
+
+.Inside li
+	{
+	line-height:1.2em;
+	margin:0.2em;
+	}
+
+.Article
+	{
+	border-style:solid;
+	border-color:#999999;
+	border-width:0 0 2px 0;
+	margin-left:2%;
+	padding-bottom:1em;
+	}
+
+.Article .Number
+	{
+	color:#009999;
+	background-color:transparent;
+	font-style:italic;
+	}
+
+.Article .Info li
+	{
+	font-size:95%;
+	list-style-type:circle;
+	margin:0;
+	line-height:1.2em;
+	}
+
+.Article .Footer
+	{
+	text-align:right;
+	}
+
+.Note li	{
+	margin:0.2em;
+	line-height:1.2em;
+	}
+
+.CM
+	{
+	font-size:90%;
+	text-align:right;
+	}

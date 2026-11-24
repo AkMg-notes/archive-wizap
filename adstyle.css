@@ -1,0 +1,446 @@
+@charset "EUC-JP";
+/*
+
+Modified based on 
+Theme Firecrow
+
+Theme URL: http://www.web2feel.com/firecrow/
+
+*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+body {
+	margin:0 auto;
+	padding:0px 0px 50px 0px;
+	background:#000000 url(cssimages/body.jpg) top center no-repeat;
+	font-family:Arial,Tahoma,Century gothic, sans-serif;
+	color:#d6d5d4;
+	line-height:1.5em;
+/* font-size is not defined. */
+
+	}
+
+p	{
+	background-color:transparent;
+	margin:1em 2.7em;
+	padding:0;
+	}
+
+p.counter	{
+	text-align:right;
+	}
+
+p.updated	{
+	text-align:right;
+	}
+
+p.powered	{
+	text-align:right;
+	color:#666666;
+	font-size:40%;
+	}
+	
+
+img {
+	border:0;
+	margin: 0 0;
+	}
+a {
+	color:#E73540;
+	text-decoration:none;
+	outline:none;
+	}
+a:hover {
+	color:#000;
+	text-decoration:none
+		}
+
+h1	{
+	/*
+	color:#000000;
+	background-color:#cc9999;
+	text-align:center;
+	*/
+	font-size:200%;
+	margin:0.7em 0.4em;
+	padding:0.8em;
+	border-style:none;
+	color:#E73540;
+
+	}
+
+h1#zonetitle	{
+	/*
+	color:#000000;
+	background-color:#cc9966;
+	border:6px inset #333333;
+	*/
+	font-size:225%;
+	color:#d6d5d4;
+
+	}
+
+h2	{
+	/*
+	color:#000000;
+	border-style:groove none;
+	border-width:4px;
+	border-color:#000000;
+	*/
+	background-color:transparent;
+	font-size:175%;
+	margin:1.5em 0 0.75em;
+	padding:4px 1.4em;
+
+	}
+
+h3	{
+	/*
+	color:#000000;
+	background-color:transparent;
+	border-style:none none solid none;
+	border-width:1px;
+	border-color:#000000;
+	*/
+	font-size:125%;
+	margin:1.2em 0.8em 0.4em;
+	padding:0.2em 0.2em 2px 0.2em;
+
+	}
+
+h4, h5, h6 {
+	
+	}
+	
+dl,ul,ol	{
+	color:#eeeeee;
+	background-color:#111111;
+	margin:1em 2.2em;
+	padding:0.8em;
+	list-style-position:inside;
+	border:1px ridge #ffffff;
+	}
+
+ul	{
+	list-style-type:disc;
+	}
+
+ol	{
+	list-style-type:decimal;
+	}
+
+dl	{
+	list-style-type:none;
+	}
+	
+dt	{
+	margin:0.2em;
+	padding:0;
+	color:#eeeeee;
+	background-color:transparent;
+	}
+
+dt:before	{
+	content:"-"
+	}
+
+dt:after	{
+	content:"-";
+	}
+
+dd,li	{
+	margin:0.4em 0.2em;
+	line-height:1.3em;
+	}
+
+dd	{
+	padding:0 0 0 0.8em;
+	}
+
+address	{
+	margin:0.5em 0.2em;
+	text-align:right;
+	}
+
+blockquote	{
+	margin:0.5em 1.5em;
+	padding:0.2em;
+	color:#cc5599;
+		/*color:#59666f;*/
+	background-color:transparent;
+	}
+
+blockquote:before	{
+	content:no-open-quote;
+	}
+
+blockquote:after	{
+	content:no-close-quote;
+	}
+hr	{
+	border-style:none;
+	visibility:hidden;
+	}
+
+hr.partline	{
+	border-style:none;
+	display:none;
+	}
+
+pre	{
+	margin:0.5em;
+	padding:0.2em;
+	border:1px solid #000000;
+	line-height:100%;
+	}
+
+div	{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	border-style:none;
+	background-color:transparent;
+	}
+
+div.section	{
+	margin:1em 0;
+	}
+
+div#FirstDate	{
+	float:right;
+	width:25%;
+	}
+
+div#ForGoing	{
+	width:75%;
+	}
+
+.clear {
+	clear:both;
+	}
+/*
+For elements in a particular element
+*/
+
+li ul	{
+	margin:0.8em 0.5em;
+	padding:0;
+	border-style:none;
+	}
+
+li ol	{
+	margin:0.8em 0.5em;
+	padding:0;
+	border-style:none;
+	}
+
+dd ul	{
+	margin:0.8em 0.5em;
+	padding:0;
+	border-style:none;
+	}
+
+dd ol	{
+	margin:0.8em 0.5em;
+	padding:0;
+	border-style:none;
+	}
+
+ul ul	{
+	list-style-type:circle;
+	}
+
+ol ol	{
+	list-style-type:lower-roman;
+	}
+
+blockquote p	{
+	margin:1.2em;
+	}
+
+/*
+For inline element
+*/
+
+em	{
+	text-decoration:underline;
+	}
+
+strong	{
+	color:#ff0000;
+	background-color:transparent;
+	text-decoration:underline;
+	}
+
+q	{
+	color:#cc5599;
+	background-color:transparent;
+	}
+
+q:before	{
+	content:open-quote;
+	}
+
+q:after	{
+	content:close-quote;
+	}
+
+abbr	{
+	color:#330066;
+	background-color:transparent;
+	border-style:none none dashed none;
+	border-bottom-color:#006600;
+	border-bottom-width:1px;
+	}
+
+dfn	{
+	}
+
+dfn:before	{
+	content:"「";
+	}
+
+dfn:after	{
+	content:"」";
+	}
+
+ins	{
+	}
+
+del	{
+	text-decoration:line-through;
+	}
+
+a	{
+	text-decoration:underline;
+	}
+
+a.DsAnchor	{
+/* a[name] */
+	text-decoration:none;
+	}
+
+a[name]	{
+	text-decoration:none;
+	}
+
+a:link	{
+	color:#5555ff;
+	background-color:transparent;
+        }
+
+a:visited	{
+	color:#99cccc;
+	background-color:transparent;
+	}
+
+a:active	{
+	}
+
+a:hover	{
+	color:#663333;
+	background-color:transparent;
+	}
+
+a.DsAnchor:hover	{
+	color:#d6d5d4;
+	background-color:transparent;
+	}
+
+a[name]:hover	{
+	color:#d6d5d4;
+	background-color:transparent;
+	}
+/*
+a:focus	{
+	color:#333333;
+	background-color:transparent;
+	}
+*/
+
+/*
+For general class definition
+*/
+
+.caution	{
+	color:#ff0000;
+	background-color:transparent;
+	}
+
+.backlink	{
+	margin:2em 2.2em 1.5em 2.2em;
+	text-align:right;
+	}
+
+.dissonance	{
+	color:#ff0000;
+	background-color:transparent;
+	}
+
+.subtitle	{
+	text-align:center;
+	}
+
+.facehalf	{
+	clear:left;
+	float:left;
+	width:50%;
+	}
+
+.reversehalf	{
+	float:left;
+	width:50%;
+	}
+
+.combined	{
+	clear:both;
+	}
+
+/*
+For general ID definition
+*/
+
+#StartMain	{
+	clear:right;
+	}
+
+/* back to forecrows*/
+	
+table{
+  margin: 10px 2.5em 10px;
+  border:1px solid #06090F;
+}
+
+table td, table th{
+  text-align: left;
+  padding: .4em .8em;
+}
+
+table th{
+  background: #06090F ;
+  color: #999;
+  text-transform: uppercase;
+  font-weight: normal;
+border:none;
+}
+
+table td{
+  background: #e4e4e4;
+  border:none;
+  color:#555;
+}
+
+table tr.even td{
+  background: #eee;
+  border:none;
+}
+
+table tr:hover td{
+  background: #FFF9DF;
+}
+
